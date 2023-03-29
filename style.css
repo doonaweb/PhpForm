@@ -1,0 +1,154 @@
+/*
+Developed by Doonaweb.ir
+A simple contact form with PHP and MySQL
+version: 1.0.0
+*/
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "vazir";
+    src: url('font/Vazir-Regular-FD.woff2');
+}
+body{
+    font-family: "vazir";
+    direction: rtl;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:navy;
+    flex-flow: column wrap;
+}
+
+.alert{
+    color: yellow;
+}
+form{
+    width: 800px;
+    max-width: 100%;
+    margin: 20px auto;
+    background-color: #5333ed;
+    padding: 30px 25px;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #00008055;
+}
+label{
+    display: block;
+    margin-bottom: 15px;
+}
+sup{
+    color: rgb(255, 116, 116);
+    font-size: 1.1rem;
+}
+.form-field{
+    padding: 15px;
+}
+button,input,textarea{
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+    padding: 8px 16px;
+}
+input[type="email"],input[type="tel"]{
+    direction: ltr;
+    text-align: left;
+}
+input[type="submit"]{
+    background-color: orange;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: rgb(255, 145, 0);
+}
+@media screen and (min-width:600px){
+    .g-2{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+input,textarea{
+    display: block;
+    width: 100%;
+    min-height: 35px;
+    border-radius: 5px;
+    border: none;
+}
+textarea{
+    resize: vertical;
+    min-height: 200px;
+}
+
+
+.results{
+    background-color: #fff;
+    width: 1000px;
+    max-width: 100%;
+    padding: 40px 25px;
+    border-radius: 20px;
+}
+
+.results h1{
+    font-size: 1.2rem;
+    text-align: center;
+}
+table{
+    width: 100%;
+    margin: auto;
+    overflow-x:auto;
+    background-color: #fff;
+    
+}
+table#details{
+    display: flex;
+    
+}
+table,td,th{
+    border: 1px solid #5333ed;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 15px;
+}
+#res th,#res td{
+    display: block;
+    width: 100%;
+}
+th{
+    background-color: #5333ed55;
+    text-align: center;
+}
+
+@media screen and (min-width:600px){
+    th,td{
+        display: table-cell;
+    }
+}
+
+
+.btn{
+    text-decoration: none;
+    background-color: yellow;
+    color: #222;
+    width: 100%;
+    display: block;
+    min-height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: rgb(255, 94, 0);
+    color: #fff;
+}
+
+.text-center{
+    text-align: center;
+}
